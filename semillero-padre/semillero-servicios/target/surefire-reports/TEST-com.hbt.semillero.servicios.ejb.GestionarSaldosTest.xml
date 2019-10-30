@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="2.488" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\test-classes;C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\classes;C:\Users\soporte_it_manizales\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\soporte_it_manizales\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\soporte_it_manizales\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ejb\javax.ejb-api\3.2\javax.ejb-api-3.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.1.1\javax.ws.rs-api-2.1.1.jar;C:\Users\soporte_it_manizales\.m2\repository\unknown\binary\javax.ws.rs-api-2.0\SNAPSHOT\javax.ws.rs-api-2.0-SNAPSHOT.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\hibernate-core\5.2.12.Final\hibernate-core-5.2.12.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\soporte_it_manizales\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\soporte_it_manizales\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire7622379918759970551\surefirebooter1853006469172217771.jar C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire7622379918759970551 2019-10-30T13-40-10_600-jvmRun1 surefire5260125452818438095tmp surefire_03873990732479777801tmp"/>
+    <property name="surefire.test.class.path" value="C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\test-classes;C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\classes;C:\Users\soporte_it_manizales\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\soporte_it_manizales\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\soporte_it_manizales\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ejb\javax.ejb-api\3.2\javax.ejb-api-3.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.1.1\javax.ws.rs-api-2.1.1.jar;C:\Users\soporte_it_manizales\.m2\repository\unknown\binary\javax.ws.rs-api-2.0\SNAPSHOT\javax.ws.rs-api-2.0-SNAPSHOT.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\hibernate-core\5.2.12.Final\hibernate-core-5.2.12.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\soporte_it_manizales\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\soporte_it_manizales\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\soporte_it_manizales"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="basedir" value="C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire7622379918759970551\surefirebooter1853006469172217771.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="soporte_it_manizales"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\soporte_it_manizales\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\nodejs\;C:\apache-maven-3.6.1\bin\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Users\soporte_it_manizales\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="consultarSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.208"/>
+  <testcase name="crearSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
+  <testcase name="crearSaldosTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.007"/>
+  <testcase name="eliminarSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
+  <testcase name="modificarSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.001"/>
+  <testcase name="recorrerSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
+</testsuite>
