@@ -7,6 +7,7 @@ package com.hbt.semillero.entidades;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -72,6 +73,37 @@ public class Cuenta implements Serializable{
     @Override
     public String toString() {
         return "Cuenta{" + "id=" + id + ", fechaNacimiento=" + fechaNacimiento + ", estado=" + estado + ", persona=" + persona + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 29 * hash + Objects.hashCode(this.id);
+        hash = 29 * hash + Objects.hashCode(this.fechaNacimiento);
+        hash = 29 * hash + Objects.hashCode(this.estado);
+        hash = 29 * hash + Objects.hashCode(this.persona);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Cuenta other = (Cuenta) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaNacimiento, other.fechaNacimiento)) {
+            return false;
+        }
+        if (!Objects.equals(this.persona, other.persona)) {
+            return false;
+        }
+        return true;
     }
     
     
