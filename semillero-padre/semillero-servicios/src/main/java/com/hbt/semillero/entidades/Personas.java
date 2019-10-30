@@ -7,6 +7,7 @@ package com.hbt.semillero.entidades;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -19,6 +20,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="PERSONAS")
 public class Personas implements Serializable{
+    
     
     private String id;
     private String nombre;
@@ -79,6 +81,44 @@ public class Personas implements Serializable{
     @Override
     public String toString() {
         return "Personas{" + "id=" + id + ", nombre=" + nombre + ", cedula=" + cedula + ", sexo=" + sexo + ", fechaNacimiento=" + fechaNacimiento + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 23 * hash + Objects.hashCode(this.id);
+        hash = 23 * hash + Objects.hashCode(this.nombre);
+        hash = 23 * hash + Objects.hashCode(this.cedula);
+        hash = 23 * hash + Objects.hashCode(this.sexo);
+        hash = 23 * hash + Objects.hashCode(this.fechaNacimiento);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Personas other = (Personas) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.cedula, other.cedula)) {
+            return false;
+        }
+        if (!Objects.equals(this.sexo, other.sexo)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaNacimiento, other.fechaNacimiento)) {
+            return false;
+        }
+        return true;
     }
     
     
