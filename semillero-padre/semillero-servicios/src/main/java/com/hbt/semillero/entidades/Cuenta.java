@@ -10,32 +10,31 @@ import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
 
 /**
  *
  * @author Leo
  */
 @Entity
-@Table(name="CUENTA")
-public class Cuenta implements Serializable{
-    
+@Table(name = "CUENTA")
+public class Cuenta implements Serializable {
+
     private String id;
     private Date fechaNacimiento;
     private String estado;
     private Personas persona;
-    
-    
 
     public Cuenta() {
-        
+
     }
 
-    
     @Id
-    @Column(name="SCID")
+    @Column(name = "SCID")
     public String getId() {
         return id;
     }
@@ -43,7 +42,8 @@ public class Cuenta implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
-    @Column(name="SCFECHA_CREACION")
+
+    @Column(name = "SCFECHA_CREACION")
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -51,8 +51,8 @@ public class Cuenta implements Serializable{
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-    
-    @Column(name="SCESTADO")
+
+    @Column(name = "SCESTADO")
     public String getEstado() {
         return estado;
     }
@@ -60,8 +60,9 @@ public class Cuenta implements Serializable{
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    
-    @Column(name="PERSONA")
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "PERSONA")
     public Personas getPersona() {
         return persona;
     }
@@ -105,11 +106,5 @@ public class Cuenta implements Serializable{
         }
         return true;
     }
-    
-    
-    
-    
-    
-    
-    
+
 }

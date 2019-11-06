@@ -17,11 +17,11 @@ import javax.persistence.Table;
  *
  * @author Leo
  */
+
 @Entity
-@Table(name="PERSONAS")
-public class Personas implements Serializable{
-    
-    
+@Table(name = "PERSONAS")
+public class Personas implements Serializable {
+
     private String id;
     private String nombre;
     private String cedula;
@@ -29,11 +29,12 @@ public class Personas implements Serializable{
     private Date fechaNacimiento;
 
     public Personas() {
-        
+
     }
+
     
     @Id
-    @Column(name="SPID")
+    @Column(name = "SPID")
     public String getId() {
         return id;
     }
@@ -41,8 +42,8 @@ public class Personas implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
-    
-    @Column(name="SPNOMBRE")
+
+    @Column(name = "SPNOMBRE")
     public String getNombre() {
         return nombre;
     }
@@ -50,8 +51,8 @@ public class Personas implements Serializable{
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    @Column(name="SPCEDULA")
+
+    @Column(name = "SPCEDULA")
     public String getCedula() {
         return cedula;
     }
@@ -59,8 +60,8 @@ public class Personas implements Serializable{
     public void setCedula(String cedula) {
         this.cedula = cedula;
     }
-    
-    @Column(name="SPSEXO")
+
+    @Column(name = "SPSEXO")
     public Boolean getSexo() {
         return sexo;
     }
@@ -68,8 +69,8 @@ public class Personas implements Serializable{
     public void setSexo(Boolean sexo) {
         this.sexo = sexo;
     }
-    
-    @Column(name="SPFECHA_NACIMIENTO")
+
+    @Column(name = "SPFECHA_NACIMIENTO")
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -120,9 +121,5 @@ public class Personas implements Serializable{
         }
         return true;
     }
-    
-    
-    
-    
-    
+
 }

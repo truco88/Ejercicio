@@ -5,14 +5,16 @@
  */
 package com.hbt.semillero.entidades;
 
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -20,25 +22,23 @@ import javax.persistence.Table;
  * @author Leo
  */
 @Entity
-@Table(name="SALDO")
-public class Saldo implements Serializable{
-    
+@Table(name = "SALDO")
+public class Saldo implements Serializable {
+
     private String id;
     private Date fechaSaldo;
     private String unidades;
     private BigDecimal totalSaldo;
     private Date fechaCreacion;
-    private Persona persona;
+    private Personas persona;
     private Cuenta cuenta;
-    
 
     public Saldo() {
-        
-        
+
     }
-    
+
     @Id
-    @Column(name="SSID")
+    @Column(name = "SSID")
     public String getId() {
         return id;
     }
@@ -46,8 +46,8 @@ public class Saldo implements Serializable{
     public void setId(String id) {
         this.id = id;
     }
-    
-    @Column(name="SSFECHA")
+
+    @Column(name = "SSFECHA")
     public Date getFechaSaldo() {
         return fechaSaldo;
     }
@@ -55,8 +55,8 @@ public class Saldo implements Serializable{
     public void setFechaSaldo(Date fechaSaldo) {
         this.fechaSaldo = fechaSaldo;
     }
-    
-    @Column(name="SSUNIDADES")
+
+    @Column(name = "SSUNIDADES")
     public String getUnidades() {
         return unidades;
     }
@@ -64,8 +64,8 @@ public class Saldo implements Serializable{
     public void setUnidades(String unidades) {
         this.unidades = unidades;
     }
-    
-    @Column(name="SSSALDO_TOTAL")
+
+    @Column(name = "SSSALDO_TOTAL")
     public BigDecimal getTotalSaldo() {
         return totalSaldo;
     }
@@ -73,14 +73,34 @@ public class Saldo implements Serializable{
     public void setTotalSaldo(BigDecimal totalSaldo) {
         this.totalSaldo = totalSaldo;
     }
-    
-    @Column(name="SSFECHA_CREACION")
+
+    @Column(name = "SSFECHA_CREACION")
     public Date getFechaCreacion() {
         return fechaCreacion;
     }
 
     public void setFechaCreacion(Date fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "SSPERSONA")
+    public Personas getPersona() {
+        return persona;
+    }
+
+    public void setPersonas(Personas persona) {
+        this.persona = persona;
+    }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "SSCUENTA")
+    public Cuenta getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(Cuenta cuenta) {
+        this.cuenta = cuenta;
     }
 
     @Override
@@ -133,7 +153,5 @@ public class Saldo implements Serializable{
         }
         return true;
     }
-    
-    
-    
+
 }
