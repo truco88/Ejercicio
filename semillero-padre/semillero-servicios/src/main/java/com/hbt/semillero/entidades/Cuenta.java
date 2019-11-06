@@ -20,21 +20,21 @@ import javax.persistence.Table;
  *
  * @author Leo
  */
-@Entity
-@Table(name = "CUENTA")
+//@Entity
+//@Table(name = "CUENTA")
 public class Cuenta implements Serializable {
 
     private String id;
     private Date fechaNacimiento;
     private String estado;
-    private Personas persona;
+    private Persona persona;
 
     public Cuenta() {
 
     }
 
-    @Id
-    @Column(name = "SCID")
+    //@Id
+    //@Column(name = "SCID")
     public String getId() {
         return id;
     }
@@ -43,7 +43,7 @@ public class Cuenta implements Serializable {
         this.id = id;
     }
 
-    @Column(name = "SCFECHA_CREACION")
+    //@Column(name = "SCFECHA_CREACION")
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -52,7 +52,7 @@ public class Cuenta implements Serializable {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    @Column(name = "SCESTADO")
+    //@Column(name = "SCESTADO")
     public String getEstado() {
         return estado;
     }
@@ -61,13 +61,13 @@ public class Cuenta implements Serializable {
         this.estado = estado;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "PERSONA")
-    public Personas getPersona() {
+    //@ManyToOne(fetch = FetchType.LAZY)
+    //@JoinColumn(name = "PERSONA")
+    public Persona getPersona() {
         return persona;
     }
 
-    public void setPersona(Personas persona) {
+    public void setPersona(Persona persona) {
         this.persona = persona;
     }
 

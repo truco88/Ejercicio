@@ -60,22 +60,19 @@ public class GestionarSaldosTest {
         Persona segundaPersona = new Persona();
 
         //Creamos los datos que va a tener el objeto persona
-        persona.setIdPersona(1L);
-        persona.setNombres("Leo");
-        persona.setApellidos("Marin");
-        persona.setEdad(31L);
-        persona.setNumeroIdentificacion("123456789");
-        persona.setNumeroTelefonico("3184077006");
-        persona.setTipoIdentificacion("cc");
+        persona.setId("1");
+        persona.setFechaNacimiento(new Date());
+        persona.setCedula("1053782623");
+        persona.setNombre("Leo");
+        persona.setSexo(Boolean.TRUE);
+        
 
         //Creamos los datos que va a tener el objeto segundaPersona
-        segundaPersona.setIdPersona(2L);
-        segundaPersona.setNombres("Andrea");
-        segundaPersona.setApellidos("Pineda");
-        segundaPersona.setEdad(30L);
-        segundaPersona.setNumeroIdentificacion("987654321");
-        segundaPersona.setNumeroTelefonico("3154056706");
-        segundaPersona.setTipoIdentificacion("cc");
+        persona.setId("1");
+        persona.setFechaNacimiento(new Date());
+        persona.setCedula("1053782634");
+        persona.setNombre("Juliana");
+        persona.setSexo(Boolean.TRUE);
             
         
         //Creamos los objetos cuenta1, cuenta2 y cuenta3.

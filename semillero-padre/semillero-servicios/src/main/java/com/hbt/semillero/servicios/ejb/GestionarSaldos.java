@@ -64,7 +64,7 @@ public class GestionarSaldos {
 
             //condicion para validar que se ingresaron datos en el campo Persona y Cuenta y me retorna esos datos
             if ((saldo.getCuenta() != null && saldo.getCuenta().getId().equals(idCuenta))
-                    || (saldo.getPersona() != null && saldo.getPersona().getIdPersona().equals(idPersona))) {
+                    || (saldo.getPersona() != null && saldo.getPersona().getId().equals(idPersona))) {
                 resultadoConsulta.add(saldo);
                 continue;
             }
@@ -75,7 +75,7 @@ public class GestionarSaldos {
             }
 
             //Condicion para validar que se ingreso un dato en el campo Person y no en el campo Cuenta
-            if (saldos.get(i).getPersona().getIdPersona().equals(idPersona) && (idCuenta == null)) {
+            if (saldos.get(i).getPersona().getId().equals(idPersona) && (idCuenta == null)) {
                 resultadoConsulta.add(saldos.get(i));
             }
 
@@ -167,7 +167,7 @@ public class GestionarSaldos {
 
         Persona personaInicial = new Persona();
 
-        personaInicial.setIdPersona(2L);
+        personaInicial.setId("2");
         saldoInicial.setPersona(personaInicial);
 
         //llenar datos

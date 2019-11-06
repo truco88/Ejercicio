@@ -1,115 +1,125 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.hbt.semillero.entidades;
 
 import java.io.Serializable;
-
+import java.util.Date;
+import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 
+ *
+ * @author Leo
  */
-@Entity
-@Table(name = "PERSONA")
+
+//@Entity
+//@Table(name = "PERSONAS")
 public class Persona implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    private String id;
+    private String nombre;
+    private String cedula;
+    private Boolean sexo;
+    private Date fechaNacimiento;
 
-	@Id
-	@GeneratedValue(generator = "SEQ")
-	@Column(name = "ID_PERSONA")
-	private Long idPersona;
+    public Persona() {
 
-	@Column(name = "NUM_ID")
-	private String numeroIdentificacion;
+    }
 
-	@Column(name = "TIPO_ID")
-	private String tipoIdentificacion;
+    
+    //@Id
+    //@Column(name = "SPID")
+    public String getId() {
+        return id;
+    }
 
-	@Column(name = "NUM_TEL")
-	private String numeroTelefonico;
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	@Column(name = "NOMBRES")
-	private String nombres;
+    //@Column(name = "SPNOMBRE")
+    public String getNombre() {
+        return nombre;
+    }
 
-	@Column(name = "APELLIDOS")
-	private String apellidos;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-	@Column(name = "EDAD")
-	private Long edad;
+    //@Column(name = "SPCEDULA")
+    public String getCedula() {
+        return cedula;
+    }
 
-	/**
-	 * Obtiene el nombre completo de la persona.
-	 * 
-	 * @return
-	 */
-	protected String obtenerNombreCompleto() {
-		return getNombres() + " " + getApellidos();
-	}
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
 
-	/*
-	 * M�todos de acceso y modificadores de atributos
-	 */
+    //@Column(name = "SPSEXO")
+    public Boolean getSexo() {
+        return sexo;
+    }
 
-	public String getNumeroIdentificacion() {
-		return numeroIdentificacion;
-	}
+    public void setSexo(Boolean sexo) {
+        this.sexo = sexo;
+    }
 
-	public void setNumeroIdentificacion(String numeroIdentificacion) {
-		this.numeroIdentificacion = numeroIdentificacion;
-	}
+    //@Column(name = "SPFECHA_NACIMIENTO")
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
 
-	public String getTipoIdentificacion() {
-		return tipoIdentificacion;
-	}
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
 
-	public void setTipoIdentificacion(String tipoIdentificacion) {
-		this.tipoIdentificacion = tipoIdentificacion;
-	}
+    @Override
+    public String toString() {
+        return "Personas{" + "id=" + id + ", nombre=" + nombre + ", cedula=" + cedula + ", sexo=" + sexo + ", fechaNacimiento=" + fechaNacimiento + '}';
+    }
 
-	public String getNumeroTelefonico() {
-		return numeroTelefonico;
-	}
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 23 * hash + Objects.hashCode(this.id);
+        hash = 23 * hash + Objects.hashCode(this.nombre);
+        hash = 23 * hash + Objects.hashCode(this.cedula);
+        hash = 23 * hash + Objects.hashCode(this.sexo);
+        hash = 23 * hash + Objects.hashCode(this.fechaNacimiento);
+        return hash;
+    }
 
-	public void setNumeroTelefonico(String numeroTelefonico) {
-		this.numeroTelefonico = numeroTelefonico;
-	}
-
-	public String getNombres() {
-		return nombres;
-	}
-
-	public void setNombres(String nombres) {
-		this.nombres = nombres;
-	}
-
-	public String getApellidos() {
-		return apellidos;
-	}
-
-	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
-	}
-
-	public Long getEdad() {
-		return edad;
-	}
-
-	public void setEdad(Long edad) {
-		this.edad = edad;
-	}
-
-	public Long getIdPersona() {
-		return idPersona;
-	}
-
-	public void setIdPersona(Long idPersona) {
-		this.idPersona = idPersona;
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Persona other = (Persona) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
+            return false;
+        }
+        if (!Objects.equals(this.cedula, other.cedula)) {
+            return false;
+        }
+        if (!Objects.equals(this.sexo, other.sexo)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaNacimiento, other.fechaNacimiento)) {
+            return false;
+        }
+        return true;
+    }
 
 }
