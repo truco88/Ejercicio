@@ -1,12 +1,14 @@
 
 package com.hbt.semillero.dto;
 
+import com.hbt.semillero.entidades.Cuenta;
 import com.hbt.semillero.entidades.Persona;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 //Clase Saldo
-public class SaldoDTO {
+public class SaldoDTO implements Serializable{
 
     private String id;
     private Date fechaSaldo;
@@ -14,15 +16,18 @@ public class SaldoDTO {
     private BigDecimal totalSaldo;
     private Date fechaCreacion;
     private Persona persona;
-    private CuentaDTO cuenta;
+    private Cuenta cuenta;
 
     //Constructor vacio de la clase Saldo
     public SaldoDTO() {
+        super();
 
     }
 
      //Constructor de la clase Saldo
-    public SaldoDTO(String id, Date fechaSaldo, String unidades, BigDecimal totalSaldo, Date fechaCreacion, Persona persona, CuentaDTO cuenta) {
+
+    public SaldoDTO(String id, Date fechaSaldo, String unidades, BigDecimal totalSaldo, Date fechaCreacion, Persona persona, Cuenta cuenta) {
+        super();
         this.id = id;
         this.fechaSaldo = fechaSaldo;
         this.unidades = unidades;
@@ -31,6 +36,7 @@ public class SaldoDTO {
         this.persona = persona;
         this.cuenta = cuenta;
     }
+    
 
     //Metodos de iniciacion Getters and Setters
     public String getId() {
@@ -81,12 +87,16 @@ public class SaldoDTO {
         this.persona = persona;
     }
 
-    public CuentaDTO getCuenta() {
+    public Cuenta getCuenta() {
         return cuenta;
     }
 
-    public void setCuenta(CuentaDTO cuenta) {
+    public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
     }
+
+    
+
+    
 
 }

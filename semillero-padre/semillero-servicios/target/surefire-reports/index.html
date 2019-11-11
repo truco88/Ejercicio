@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" hash-for-method="consultarSaldo">consultarSaldo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" hash-for-method="consultarSaldo">consultarSaldo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" hash-for-method="crearSaldoTest">crearSaldoTest</a> <!-- method navigator-link -->
@@ -151,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.hbt.semillero.servicios.ejb.GestionarSaldosTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -162,21 +153,8 @@
                   <a name="consultarSaldo">
                   </a> <!-- consultarSaldo -->
                   <span class="method-name">consultarSaldo</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.hbt.semillero.servicios.ejb.GestionarSaldos.consultarSaldo(GestionarSaldos.java:73)
-	at com.hbt.semillero.servicios.ejb.GestionarSaldosTest.consultarSaldo(GestionarSaldosTest.java:48)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hbt.semillero.servicios.ejb.GestionarSaldosTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="crearSaldoTest">
@@ -269,32 +247,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'consultarSaldo')
 data.setCell(0, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
-data.setCell(0, 3, 19);
+data.setCell(0, 3, 32);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'eliminarSaldoTest')
+data.setCell(1, 1, 'crearSaldosTest')
 data.setCell(1, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'crearSaldoTest')
+data.setCell(2, 1, 'eliminarSaldoTest')
 data.setCell(2, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
 data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'crearSaldosTest')
+data.setCell(3, 1, 'modificarSaldoTest')
 data.setCell(3, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'recorrerSaldo')
+data.setCell(4, 1, 'crearSaldoTest')
 data.setCell(4, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'modificarSaldoTest')
+data.setCell(5, 1, 'recorrerSaldo')
 data.setCell(5, 2, 'com.hbt.semillero.servicios.ejb.GestionarSaldosTest')
 data.setCell(5, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 ms</span>
+              <span class="suite-total-time">Total running time: 35 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -322,30 +300,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.hbt.semillero.servicios.ejb.GestionarSaldosTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">consultarSaldo</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">crearSaldoTest</span>
-                <span class="method-start">33 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">crearSaldosTest</span>
                 <span class="method-start">36 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">eliminarSaldoTest</span>
+                <span class="method-name">crearSaldosTest</span>
                 <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">eliminarSaldoTest</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">modificarSaldoTest</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">recorrerSaldo</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

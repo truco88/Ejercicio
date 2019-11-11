@@ -10,7 +10,10 @@ import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
@@ -18,8 +21,8 @@ import javax.persistence.Table;
  * @author Leo
  */
 
-//@Entity
-//@Table(name = "PERSONAS")
+@Entity
+@Table(name = "PERSONAS")
 public class Persona implements Serializable {
 
     private String id;
@@ -33,8 +36,10 @@ public class Persona implements Serializable {
     }
 
     
-    //@Id
-    //@Column(name = "SPID")
+    @Id
+    @SequenceGenerator(allocationSize = 1, name = "PERSONA_SPID_GENERATOR", sequenceName = "SEQ_PERSONA")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PERSONA_SPID_GENERATOR")
+    @Column(name = "SPID")
     public String getId() {
         return id;
     }
@@ -43,7 +48,7 @@ public class Persona implements Serializable {
         this.id = id;
     }
 
-    //@Column(name = "SPNOMBRE")
+    @Column(name = "SPNOMBRE")
     public String getNombre() {
         return nombre;
     }
@@ -52,7 +57,7 @@ public class Persona implements Serializable {
         this.nombre = nombre;
     }
 
-    //@Column(name = "SPCEDULA")
+    @Column(name = "SPCEDULA")
     public String getCedula() {
         return cedula;
     }
@@ -61,7 +66,7 @@ public class Persona implements Serializable {
         this.cedula = cedula;
     }
 
-    //@Column(name = "SPSEXO")
+    @Column(name = "SPSEXO")
     public Boolean getSexo() {
         return sexo;
     }
@@ -70,7 +75,7 @@ public class Persona implements Serializable {
         this.sexo = sexo;
     }
 
-    //@Column(name = "SPFECHA_NACIMIENTO")
+    @Column(name = "SPFECHA_NACIMIENTO")
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }

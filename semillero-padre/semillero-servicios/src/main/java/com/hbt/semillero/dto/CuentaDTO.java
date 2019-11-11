@@ -6,6 +6,7 @@
 package com.hbt.semillero.dto;
 
 import com.hbt.semillero.entidades.Persona;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
  * @author Leo
  */
 //Clase Cuenta
-public class CuentaDTO {
+public class CuentaDTO implements Serializable {
 
     private String id;
     private Date fechaCreacion;
@@ -22,11 +23,21 @@ public class CuentaDTO {
 
     //Constructor de la clase Cuenta
     public CuentaDTO(String id, Date fechaCreacion, Boolean activo, Persona persona) {
+        super();
         this.id = id;
         this.fechaCreacion = fechaCreacion;
         this.activo = activo;
         this.persona = persona;
     }
+    
+    /**
+	 * Constructor de la clase.
+	 * @param id
+	 * @param fechaCreacion
+	 * @param activo
+	 * @param persona
+	 * 
+	 */
 
     public CuentaDTO(){
         

@@ -1,12 +1,12 @@
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\dto\CuentaDTO.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\entidades\Persona.java
-C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\miProyecto\CuentaDTO.java
+C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\servicios\ejb\GestionarSaldosBean.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\servicios\rest\config\CORSFilter.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\common\JaxRSActivator.java
-C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\dto\PersonasDTO.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\entidades\Cuenta.java
-C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\miProyecto\PersonasDTO.java
-C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\miProyecto\SaldoDTO.java
+C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\dto\PersonaDTO.java
+C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\servicios\ejb\IGestionasSaldosLocal.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\dto\SaldoDTO.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\servicios\ejb\GestionarSaldos.java
+C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\rest\GestionasSaldoRest.java
 C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\src\main\java\com\hbt\semillero\entidades\Saldo.java

@@ -12,17 +12,20 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
  *
  * @author Leo
  */
-//@Entity
-//@Table(name = "SALDO")
+@Entity
+@Table(name = "SALDO")
 public class Saldo implements Serializable {
 
     private String id;
@@ -37,8 +40,10 @@ public class Saldo implements Serializable {
 
     }
 
-    //@Id
-    //@Column(name = "SSID")
+    @Id
+    @SequenceGenerator(allocationSize = 1, name = "SALDO_SSID_GENERATOR", sequenceName = "SEQ_SALDO")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SALDO_SSID_GENERATOR")
+    @Column(name = "SSID")
     public String getId() {
         return id;
     }
@@ -47,7 +52,7 @@ public class Saldo implements Serializable {
         this.id = id;
     }
 
-    //@Column(name = "SSFECHA")
+    @Column(name = "SSFECHA")
     public Date getFechaSaldo() {
         return fechaSaldo;
     }
@@ -56,7 +61,7 @@ public class Saldo implements Serializable {
         this.fechaSaldo = fechaSaldo;
     }
 
-    //@Column(name = "SSUNIDADES")
+    @Column(name = "SSUNIDADES")
     public String getUnidades() {
         return unidades;
     }
@@ -65,7 +70,7 @@ public class Saldo implements Serializable {
         this.unidades = unidades;
     }
 
-    //@Column(name = "SSSALDO_TOTAL")
+    @Column(name = "SSSALDO_TOTAL")
     public BigDecimal getTotalSaldo() {
         return totalSaldo;
     }
@@ -74,7 +79,7 @@ public class Saldo implements Serializable {
         this.totalSaldo = totalSaldo;
     }
 
-    //@Column(name = "SSFECHA_CREACION")
+    @Column(name = "SSFECHA_CREACION")
     public Date getFechaCreacion() {
         return fechaCreacion;
     }
@@ -83,18 +88,18 @@ public class Saldo implements Serializable {
         this.fechaCreacion = fechaCreacion;
     }
 
-    //@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "SSPERSONA")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "SSPERSONA")
     public Persona getPersona() {
         return persona;
     }
 
-    public void setPersonas(Persona persona) {
+    public void setPersona(Persona persona) {
         this.persona = persona;
     }
 
-    //@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "SSCUENTA")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "SSCUENTA")
     public Cuenta getCuenta() {
         return cuenta;
     }
@@ -104,20 +109,15 @@ public class Saldo implements Serializable {
     }
 
     @Override
-    public String toString() {
-        return "Saldo{" + "id=" + id + ", fechaSaldo=" + fechaSaldo + ", unidades=" + unidades + ", totalSaldo=" + totalSaldo + ", fechaCreacion=" + fechaCreacion + ", persona=" + persona + ", cuenta=" + cuenta + '}';
-    }
-
-    @Override
     public int hashCode() {
         int hash = 5;
-        hash = 59 * hash + Objects.hashCode(this.id);
-        hash = 59 * hash + Objects.hashCode(this.fechaSaldo);
-        hash = 59 * hash + Objects.hashCode(this.unidades);
-        hash = 59 * hash + Objects.hashCode(this.totalSaldo);
-        hash = 59 * hash + Objects.hashCode(this.fechaCreacion);
-        hash = 59 * hash + Objects.hashCode(this.persona);
-        hash = 59 * hash + Objects.hashCode(this.cuenta);
+        hash = 47 * hash + Objects.hashCode(this.id);
+        hash = 47 * hash + Objects.hashCode(this.fechaSaldo);
+        hash = 47 * hash + Objects.hashCode(this.unidades);
+        hash = 47 * hash + Objects.hashCode(this.totalSaldo);
+        hash = 47 * hash + Objects.hashCode(this.fechaCreacion);
+        hash = 47 * hash + Objects.hashCode(this.persona);
+        hash = 47 * hash + Objects.hashCode(this.cuenta);
         return hash;
     }
 
@@ -153,5 +153,7 @@ public class Saldo implements Serializable {
         }
         return true;
     }
+
+    
 
 }

@@ -1,9 +1,11 @@
 
 package com.hbt.semillero.servicios.ejb;
 
+
+
 import com.hbt.semillero.entidades.Persona;
-import com.hbt.semillero.miProyecto.CuentaDTO;
-import com.hbt.semillero.miProyecto.SaldoDTO;
+import com.hbt.semillero.dto.SaldoDTO;
+import com.hbt.semillero.entidades.Cuenta;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -28,7 +30,7 @@ public class GestionarSaldosTest {
     @Test
     public void consultarSaldo() {
         GestionarSaldos gestionarSaldo = new GestionarSaldos();
-        List<SaldoDTO> saldosTest2 = gestionarSaldo.consultarSaldo(1L, "1");
+        List<SaldoDTO> saldosTest2 = gestionarSaldo.consultarSaldo("1", "1");
         Assert.assertNull(saldosTest2);
 
         //Test para validar que no se envian datos en ninguno de los campos
@@ -36,7 +38,7 @@ public class GestionarSaldosTest {
         Assert.assertNull(saldoTest3);
 
         //Test para validar que el primer campo envia datos y el segundo no 
-        List<SaldoDTO> saldoTest4 = gestionarSaldo.consultarSaldo(1L, null);
+        List<SaldoDTO> saldoTest4 = gestionarSaldo.consultarSaldo("1", null);
         Assert.assertNull(saldoTest4);
 
         //Test para validar que el segundo campo envia datos y el primero no
@@ -45,7 +47,7 @@ public class GestionarSaldosTest {
 
         //
         gestionarSaldo.crearListaSaldos();
-        List<SaldoDTO> saldoTest6 = gestionarSaldo.consultarSaldo(2L, null);
+        List<SaldoDTO> saldoTest6 = gestionarSaldo.consultarSaldo("2", null);
         Assert.assertNotNull(saldoTest6);
     }
     
@@ -68,7 +70,7 @@ public class GestionarSaldosTest {
         
 
         //Creamos los datos que va a tener el objeto segundaPersona
-        persona.setId("1");
+        persona.setId("2");
         persona.setFechaNacimiento(new Date());
         persona.setCedula("1053782634");
         persona.setNombre("Juliana");
@@ -76,28 +78,28 @@ public class GestionarSaldosTest {
             
         
         //Creamos los objetos cuenta1, cuenta2 y cuenta3.
-        CuentaDTO cuenta3 = new CuentaDTO();
-        CuentaDTO cuenta1 = new CuentaDTO();
-        CuentaDTO cuenta2 = new CuentaDTO();
+        Cuenta cuenta3 = new Cuenta();
+        Cuenta cuenta1 = new Cuenta();
+        Cuenta cuenta2 = new Cuenta();
 
         //Creamos los datos que va a tener el objeto cuenta3
         cuenta3.setId("3");
         cuenta3.setPersona(persona);
-        cuenta3.setFechaCreacion(new Date());
-        cuenta3.setActivo(Boolean.TRUE);
+        cuenta3.setFechaNacimiento(new Date());
+        cuenta3.setEstado("Activo");
 
         //Creamos los datos que va a tener el objeto cuenta1
         cuenta1.setId("1");
         cuenta1.setPersona(segundaPersona);
-        cuenta1.setFechaCreacion(new Date());
-        cuenta1.setActivo(Boolean.TRUE);
+        cuenta1.setFechaNacimiento(new Date());
+        cuenta1.setEstado("Inactivo");
         
 
         //Creamos los datos que va a tener el objeto cuenta2
         cuenta2.setId("2");
         cuenta2.setPersona(persona);
-        cuenta2.setFechaCreacion(new Date());
-        cuenta2.setActivo(Boolean.TRUE);
+        cuenta2.setFechaNacimiento(new Date());
+        cuenta2.setEstado("Activo");
 
         //Test para validar saldo creado en el objeto persona con numero de cuenta cuenta3
         GestionarSaldos gestionSaldo = new GestionarSaldos();

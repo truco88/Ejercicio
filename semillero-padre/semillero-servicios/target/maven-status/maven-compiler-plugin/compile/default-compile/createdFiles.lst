@@ -1,12 +1,8 @@
-com\hbt\semillero\miProyecto\SaldoDTO.class
 com\hbt\semillero\entidades\Cuenta.class
 com\hbt\semillero\entidades\Saldo.class
-com\hbt\semillero\miProyecto\PersonasDTO.class
 com\hbt\semillero\common\JaxRSActivator.class
 com\hbt\semillero\dto\CuentaDTO.class
 com\hbt\semillero\servicios\rest\config\CORSFilter.class
 com\hbt\semillero\servicios\ejb\GestionarSaldos.class
-com\hbt\semillero\dto\PersonasDTO.class
-com\hbt\semillero\miProyecto\CuentaDTO.class
 com\hbt\semillero\entidades\Persona.class
 com\hbt\semillero\dto\SaldoDTO.class

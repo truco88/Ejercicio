@@ -1,8 +1,10 @@
 package com.hbt.semillero.servicios.ejb;
 
+import com.hbt.semillero.dto.CuentaDTO;
+import com.hbt.semillero.dto.SaldoDTO;
 import com.hbt.semillero.entidades.Persona;
-import com.hbt.semillero.miProyecto.CuentaDTO;
-import com.hbt.semillero.miProyecto.SaldoDTO;
+import com.hbt.semillero.entidades.Cuenta;
+import com.hbt.semillero.entidades.Saldo;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -45,7 +47,7 @@ public class GestionarSaldos {
      * es null y el id de la cuenta es null devuelve la lista de saldos, si se
      * ingresan datos en los campos se devuelve el resultado de la consulta
      */
-    protected List<SaldoDTO> consultarSaldo(Long idPersona, String idCuenta) {
+    protected List<SaldoDTO> consultarSaldo(String idPersona, String idCuenta) {
 
         //isEmpty metodo que comprueba si un String esta vacio o no, devuelve verdadero si la cadena esta vacia de lo contrario devuelve falso.
         if (saldos == null || saldos.isEmpty()) {
@@ -95,7 +97,7 @@ public class GestionarSaldos {
      * @param cuenta
      * @return Saldo nuevo creado
      */
-    public SaldoDTO crearSaldo(String id, Date fechaSaldo, String unidades, BigDecimal totalSaldo, Date fechaCreacion, Persona persona, CuentaDTO cuenta) {
+    public SaldoDTO crearSaldo(String id, Date fechaSaldo, String unidades, BigDecimal totalSaldo, Date fechaCreacion, Persona persona, Cuenta cuenta) {
 
         SaldoDTO saldoNuevo;
         saldoNuevo = new SaldoDTO(); //instanciar

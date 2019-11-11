@@ -5,23 +5,27 @@
  */
 package com.hbt.semillero.entidades;
 
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 /**
  *
  * @author Leo
  */
-//@Entity
-//@Table(name = "CUENTA")
+@Entity
+@Table(name = "CUENTA")
 public class Cuenta implements Serializable {
 
     private String id;
@@ -33,8 +37,10 @@ public class Cuenta implements Serializable {
 
     }
 
-    //@Id
-    //@Column(name = "SCID")
+    @Id
+    @SequenceGenerator(allocationSize = 1, name = "CUENTA_SCID_GENERATOR", sequenceName = "SEQ_CUENTA")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CUENTA_SCID_GENERATOR")    
+    @Column(name = "SCID")
     public String getId() {
         return id;
     }
@@ -43,7 +49,7 @@ public class Cuenta implements Serializable {
         this.id = id;
     }
 
-    //@Column(name = "SCFECHA_CREACION")
+    @Column(name = "SCFECHA_CREACION")
     public Date getFechaNacimiento() {
         return fechaNacimiento;
     }
@@ -52,7 +58,7 @@ public class Cuenta implements Serializable {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    //@Column(name = "SCESTADO")
+    @Column(name = "SCESTADO")
     public String getEstado() {
         return estado;
     }
@@ -61,8 +67,8 @@ public class Cuenta implements Serializable {
         this.estado = estado;
     }
 
-    //@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "PERSONA")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "PERSONA")
     public Persona getPersona() {
         return persona;
     }
