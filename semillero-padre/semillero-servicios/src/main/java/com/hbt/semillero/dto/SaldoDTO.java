@@ -6,6 +6,7 @@ import com.hbt.semillero.entidades.Persona;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.Objects;
 
 //Clase Saldo
 public class SaldoDTO implements Serializable{
@@ -93,6 +94,52 @@ public class SaldoDTO implements Serializable{
 
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 47 * hash + Objects.hashCode(this.id);
+        hash = 47 * hash + Objects.hashCode(this.fechaSaldo);
+        hash = 47 * hash + Objects.hashCode(this.unidades);
+        hash = 47 * hash + Objects.hashCode(this.totalSaldo);
+        hash = 47 * hash + Objects.hashCode(this.fechaCreacion);
+        hash = 47 * hash + Objects.hashCode(this.persona);
+        hash = 47 * hash + Objects.hashCode(this.cuenta);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final SaldoDTO other = (SaldoDTO) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaSaldo, other.fechaSaldo)) {
+            return false;
+        }
+        if (!Objects.equals(this.unidades, other.unidades)) {
+            return false;
+        }
+        if (!Objects.equals(this.totalSaldo, other.totalSaldo)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaCreacion, other.fechaCreacion)) {
+            return false;
+        }
+        if (!Objects.equals(this.persona, other.persona)) {
+            return false;
+        }
+        if (!Objects.equals(this.cuenta, other.cuenta)) {
+            return false;
+        }
+        return true;
     }
 
     

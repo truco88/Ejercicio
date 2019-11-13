@@ -39,7 +39,7 @@ public class GestionasSaldoRest {
     @QueryParam("idSaldo")
     public SaldoDTO consultarSaldo(@QueryParam("idSaldo")String idSaldo) {
         if(idSaldo!=null) {
-            return gestionarSaldoEJB.consultarSaldo(idSaldo);
+            return gestionarSaldoEJB.consultarSaldo(idSaldo.toString());
         }
 	return null;
     }

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="113" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+  <suite name="Surefire suite" duration-ms="83" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="113" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+    <test name="Surefire test" duration-ms="83" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
       <class name="com.hbt.semillero.servicios.ejb.GestionarSaldosTest">
-        <test-method status="PASS" signature="consultarSaldo()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="consultarSaldo" duration-ms="50" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="consultarSaldo()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="consultarSaldo" duration-ms="29" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarSaldo -->
-        <test-method status="PASS" signature="crearSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="crearSaldoTest" duration-ms="1" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="crearSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="crearSaldoTest" duration-ms="1" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crearSaldoTest -->
-        <test-method status="PASS" signature="crearSaldosTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="crearSaldosTest" duration-ms="9" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="crearSaldosTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="crearSaldosTest" duration-ms="3" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- crearSaldosTest -->
-        <test-method status="PASS" signature="eliminarSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="eliminarSaldoTest" duration-ms="0" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="eliminarSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="eliminarSaldoTest" duration-ms="1" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eliminarSaldoTest -->
-        <test-method status="PASS" signature="modificarSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="modificarSaldoTest" duration-ms="0" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="modificarSaldoTest()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="modificarSaldoTest" duration-ms="1" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modificarSaldoTest -->
-        <test-method status="PASS" signature="recorrerSaldo()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="recorrerSaldo" duration-ms="0" started-at="2019-11-13T01:12:54Z" finished-at="2019-11-13T01:12:54Z">
+        <test-method status="PASS" signature="recorrerSaldo()[pri:0, instance:com.hbt.semillero.servicios.ejb.GestionarSaldosTest@3796751b]" name="recorrerSaldo" duration-ms="0" started-at="2019-11-13T16:12:04Z" finished-at="2019-11-13T16:12:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recorrerSaldo -->

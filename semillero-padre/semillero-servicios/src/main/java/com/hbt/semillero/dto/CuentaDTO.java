@@ -8,6 +8,7 @@ package com.hbt.semillero.dto;
 import com.hbt.semillero.entidades.Persona;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 /**
  *
@@ -75,5 +76,41 @@ public class CuentaDTO implements Serializable {
     public void setPersona(Persona persona) {
         this.persona = persona;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 37 * hash + Objects.hashCode(this.id);
+        hash = 37 * hash + Objects.hashCode(this.fechaCreacion);
+        hash = 37 * hash + Objects.hashCode(this.activo);
+        hash = 37 * hash + Objects.hashCode(this.persona);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final CuentaDTO other = (CuentaDTO) obj;
+        if (!Objects.equals(this.id, other.id)) {
+            return false;
+        }
+        if (!Objects.equals(this.fechaCreacion, other.fechaCreacion)) {
+            return false;
+        }
+        if (!Objects.equals(this.activo, other.activo)) {
+            return false;
+        }
+        if (!Objects.equals(this.persona, other.persona)) {
+            return false;
+        }
+        return true;
+    }
+    
+    
     
 }
