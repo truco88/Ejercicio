@@ -23,7 +23,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "PERSONAS")
-public class Persona implements Serializable {
+public class Persona implements Serializable{
 
     private String id;
     private String nombre;

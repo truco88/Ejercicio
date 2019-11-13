@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.964" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.994" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="CO"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire8794214723483756118\surefirebooter888073437867475192.jar C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire8794214723483756118 2019-11-11T12-28-30_300-jvmRun1 surefire2143097516259388190tmp surefire_08939872747218627473tmp"/>
+    <property name="sun.java.command" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire3066065168889852711\surefirebooter3584242929297686559.jar C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire3066065168889852711 2019-11-12T20-12-50_271-jvmRun1 surefire1342976995735524537tmp surefire_01828086651268058392tmp"/>
     <property name="surefire.test.class.path" value="C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\test-classes;C:\semilleroHBT-master\ambiente\semillero-hbt\semillero-padre\semillero-servicios\target\classes;C:\Users\soporte_it_manizales\.m2\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\soporte_it_manizales\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\soporte_it_manizales\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\persistence\persistence-api\1.0.2\persistence-api-1.0.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ejb\javax.ejb-api\3.2\javax.ejb-api-3.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\transaction\javax.transaction-api\1.2\javax.transaction-api-1.2.jar;C:\Users\soporte_it_manizales\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.1.1\javax.ws.rs-api-2.1.1.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.4\jackson-core-2.9.4.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.4\jackson-databind-2.9.4.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\soporte_it_manizales\.m2\repository\unknown\binary\javax.ws.rs-api-2.0\SNAPSHOT\javax.ws.rs-api-2.0-SNAPSHOT.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\hibernate-core\5.2.12.Final\hibernate-core-5.2.12.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\soporte_it_manizales\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\soporte_it_manizales\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\soporte_it_manizales\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\soporte_it_manizales\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\soporte_it_manizales"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire8794214723483756118\surefirebooter888073437867475192.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\soporte_it_manizales\AppData\Local\Temp\surefire3066065168889852711\surefirebooter3584242929297686559.jar"/>
     <property name="skipeangular" value="true"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
     <property name="user.script" value=""/>
@@ -61,10 +61,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="consultarSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.031"/>
+  <testcase name="consultarSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.049"/>
   <testcase name="crearSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
-  <testcase name="crearSaldosTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.001"/>
-  <testcase name="eliminarSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.002"/>
+  <testcase name="crearSaldosTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.009"/>
+  <testcase name="eliminarSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
   <testcase name="modificarSaldoTest" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
-  <testcase name="recorrerSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0"/>
+  <testcase name="recorrerSaldo" classname="com.hbt.semillero.servicios.ejb.GestionarSaldosTest" time="0.001"/>
 </testsuite>

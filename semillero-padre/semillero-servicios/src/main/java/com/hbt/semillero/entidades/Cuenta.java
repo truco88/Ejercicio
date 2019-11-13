@@ -26,16 +26,26 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "CUENTA")
-public class Cuenta implements Serializable {
+public class Cuenta implements Serializable{
 
     private String id;
     private Date fechaNacimiento;
     private String estado;
     private Persona persona;
+    
+
+    public Cuenta(String id, Date fechaNacimiento, String estado, Persona persona) {
+        this.id = id;
+        this.fechaNacimiento = fechaNacimiento;
+        this.estado = estado;
+        this.persona = persona;
+    }
 
     public Cuenta() {
-
+        
     }
+
+    
 
     @Id
     @SequenceGenerator(allocationSize = 1, name = "CUENTA_SCID_GENERATOR", sequenceName = "SEQ_CUENTA")
